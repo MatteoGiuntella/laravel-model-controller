@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\MovieController;
+
+use App\Http\Controllers\Guest\MovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +15,5 @@ use App\Http\Controllers\MovieController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/movies', [MovieController::class, 'index'])->name('welcome');
+Route::get('/', [MovieController::class, 'index'])->name('welcome');
 Route::get('/movies/{id}', [MovieController::class, 'show'])->name('singleMovie');
