@@ -2,7 +2,7 @@
 
 @section('main-content')
   
-    <div class=" container ">
+    <div class=" container box ">
         <div class="row">
             @foreach ($movies as $index => $singlemovie)
             <div class=" col-3 p-3 m-4 ">
